@@ -17,6 +17,7 @@ main{
     align-items: center;
     width: 100%;
     height: 100vh;
+    gap: 3.5rem;
 }
 img{
     width: 31rem;
@@ -29,11 +30,13 @@ img{
     color: #f8fafc;
     background-color: #262626;
     border-radius: 8px;
+    gap: 2rem;
 }
 #calculetor{
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    gap: 2rem;
 }
     .input-box{
         font-weight: 500;
@@ -58,13 +61,30 @@ img{
         color: #f8fafc;
         padding: 0.0.5rem;
     }
-    .input-field input ::-webkit-outer-spin-button
-    .input-field input ::-webkit-inner-spin-button{
+    .input-field input::-webkit-outer-spin-button,
+    .input-field input::-webkit-inner-spin-button{
         appearance: none;
     }
-    .unit,
+    .unit
     .icon{
         color: #cbd5e1;
         font-size: 1.3rem;
         padding: 0.6rem 1rem;
     }
+    #calculate{
+        background-color: #fd1b1b;
+        border: none;
+        color: #f8fafc;
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 0.5rem 0;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 3px;
+        
+    }
+    .input-field input:focus{
+        outline:none ;
+    }
+
+    
